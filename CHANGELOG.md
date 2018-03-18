@@ -2,6 +2,10 @@
 
  Blank
 
+# V0.2.1
+
+ * Remove tracking wide on headings
+
 # V0.2.0
 
  * Migrate to TailwindCSS
