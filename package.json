@@ -1,10 +1,9 @@
 {
   "name": "terminal2-stylekit",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Stylekit for Terminal2 websites",
   "main": "tailwind.js",
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/terminal2/stylekit.git"
