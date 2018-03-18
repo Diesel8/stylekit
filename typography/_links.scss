@@ -1,0 +1,15 @@
+
+a, a:hover, a:active, a:visited {
+  @apply .no-underline;
+}
+
+.a\:main-menu {
+  @apply .text-grey-darker .font-bold;
+  &:visited {
+    @apply .text-grey-darker;
+  }
+  &:hover {
+    @apply .text-blue-lightest;
+  }
+ 
+}

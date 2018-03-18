@@ -1,0 +1,44 @@
+.input-text {
+  @apply .px-4;
+  @apply .py-4;
+  @apply .border;
+  @apply .flex-grow;
+}
+
+.input-check {
+  @apply .appearance-none;
+  @apply .w-6 .h-6;
+  @apply .bg-white .border .rounded;
+  @apply .flex;
+  &:focus { outline: none; }
+  &:checked {
+    @apply .text-blue-lightest;
+    @apply .bg-blue;
+    @apply .justify-center .items-center;
+    &:after {
+      content: "\2714";
+    }
+  }
+}
+
+.form-top-icon {
+  @apply .flex .rounded-full .bg-white .text-grey-lighter .justify-center .items-center .w-32 .h-32 .relative .mx-auto;
+  bottom: -4rem;
+  // margin-top: -4rem;
+}
+
+.form-top-icon::before {
+  @apply .shadow .rounded-full;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left:0;
+  z-index: -1;
+}
+
+.input-email input::placeholder::before {
+  content: "test";
+}
+
