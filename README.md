@@ -15,8 +15,7 @@ Use the following `webpack.mix.js` in the root of your app
 ```javascript
 let mix = require('laravel-mix');
 
-require('laravel-mix-tailwind');
-require('laravel-mix-purgecss');
+require('terminal2-stylekit');
 
 /*
  |--------------------------------------------------------------------------
@@ -29,13 +28,7 @@ require('laravel-mix-purgecss');
  |
  */
 
-const mixed = mix.js('resources/assets/js/app.js', 'public/js')
-  .copy('node_modules/terminal2-stylekit/fonts', 'public/fonts')
-  .sass('resources/assets/sass/app.scss', 'public/css')
-  .tailwind('node_modules/terminal2-stylekit/tailwind.js')
-  .purgeCss()
-  .version()
-;
+mix.terminal2();
 ```
 
 Add tailwind & custom styles to your `app.scss` file

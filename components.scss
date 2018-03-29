@@ -5,3 +5,12 @@
 @import "./components/_button";
 @import "./components/_form";
 @import "./components/_social";
+
+.icon {
+    fill: currentColor;
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -.125em;
+}
