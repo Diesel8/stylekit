@@ -6,7 +6,7 @@ class Terminal2 {
   }
 
   boot() {
-    this.js('resources/assets/js/app.js', 'public/js')
+    Mix.js('resources/assets/js/app.js', 'public/js')
       .copy('node_modules/terminal2-stylekit/fonts', 'public/fonts')
       .sass('resources/assets/sass/app.scss', 'public/css')
       .tailwind('node_modules/terminal2-stylekit/tailwind.js')
